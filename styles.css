@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 20px 80px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.navList {
+    display: flex;
+    gap: 20px;
+}
+
+.navList > a {
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.telAll {
+    display: flex;
+    align-items: center;
+}
+
+.butCall {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cocoPhone {
+    
+}
+
+.cocoNumber {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 100%;
+}
