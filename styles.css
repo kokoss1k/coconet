@@ -9,6 +9,7 @@
     align-items: center;
     gap: 100px;
     padding: 20px 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
 }
 
 .logo {
@@ -22,10 +23,16 @@
 }
 
 .navList > a {
-    color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
     font-weight: 100;
-    font-size: 18px;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all .07s ease-in-out;
+}
+
+.navList > a:hover {
+    color: rgb(150, 90, 62);
     text-decoration: none;
 }
 
@@ -35,21 +42,33 @@
 }
 
 .butCall {
-    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 4px;
+    text-decoration: none;
+    gap: 6px;
+    background-color: black;
+    border-radius: 100px;
+    padding: 10px 30px;
+    transition: .1s ease-in-out;
+}
+
+.butCall:hover {
+    transform: scale(1.04);
 }
 
 .cocoPhone {
-    
+    display: flex;
+    width: 25px;
+    height: 25px;
 }
 
 .cocoNumber {
-    color: black;
+    display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
     font-weight: 100;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     line-height: 100%;
 }
+
