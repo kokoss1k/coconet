@@ -1,6 +1,6 @@
 /* TODO
-    - сбросить дефолтные стили браузера
-    - порядок css свойств
+    - V сбросить дефолтные стили браузера +
+    - порядок css свойств +
     - наименование css классов по БЭМ
     - работа с адаптивом
     - media для псевдокласса :hover
@@ -14,8 +14,36 @@
     - осмысленные коммиты
 */
 
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), 
+        url('../fonts/roboto-v30-cyrillic_latin-regular.woff2'),
+        format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto'), 
+        url('../fonts/roboto-v30-cyrillic_latin-300.woff2'),
+        format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto'), 
+        url('../fonts/roboto-v30-cyrillic_latin-700.woff2'),
+        format('woff2');
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -34,58 +62,56 @@
     height: auto;
 }
 
-.navList {
+.header_navList {
     display: flex;
     gap: 20px;
 }
 
-.navList > a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(0, 0, 0);
+.header_navList > a {
     font-weight: 30;
     font-size: 25px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: all .07s ease-in-out;
 }
 
-.navList > a:hover {
+.header_navList > a:hover {
+    text-decoration: none;
     color: rgb(150, 90, 62);
-    text-decoration: none;
 }
 
-.telAll {
+.header_telAll {
     display: flex;
     align-items: center;
 }
 
-.butCall {
+.header_butCall {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    gap: 6px;
-    background-color: black;
     border-radius: 100px;
+    gap: 6px;
     padding: 10px 30px;
+    background-color: black;
+    text-decoration: none;
     transition: .1s ease-in-out;
 }
 
-.butCall:hover {
+.header_butCall:hover {
     transform: scale(1.04);
 }
 
-.cocoPhone {
+.header_cocoPhone {
     display: flex;
     width: 25px;
     height: 25px;
 }
 
-.cocoNumber {
+.header_cocoNumber {
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(255, 255, 255);
     font-weight: 100;
     font-size: 20px;
-    text-decoration: none;
     line-height: 85%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
